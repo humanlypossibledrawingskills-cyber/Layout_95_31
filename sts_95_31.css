@@ -1,0 +1,375 @@
+body{background-image: url(bg\ v2.jpg); background-attachment: fixed;}
+p {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+p.normal{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(41, 58, 111);}
+div.content{
+    margin: 20px auto;
+    width: 80%;
+    background:linear-gradient(to bottom, #F1E6CF, rgb(140, 193, 216));
+    color: rgb(41, 58, 111);
+    padding: 30px;
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 50px;
+    border: 3px rgb(89, 144, 168) dashed;
+    gap:20px;
+    text-align: justify;
+    text-justify: inter-word}
+
+div.foto{
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 12px 12px 12px;
+    border:rgb(89, 144, 168) solid 3px;
+    display: flex;}
+div.foto img{
+    position: absolute;
+    object-position: center;
+    transition: transform 0.2s, box-shadow 0.2s, rotate 0.15s, opacity 0.3s}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.05);}
+div.foto img.bottom{
+    opacity: 1;
+    z-index: 1;}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.05);}
+div.content img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(89, 144, 168);
+  rotate: 2deg;
+   transition: transform 0.2s, box-shadow 0.2s, rotate 0.15s, opacity 0.3s}
+h1{
+    text-align: center;
+    background-color: rgb(231, 255, 235);
+    height: 40px;
+    color:rgb(40, 40, 118);
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    font-family: mhm;}
+h1:hover {
+    border-radius: 80px 80px 80px 80px;
+    transform: scale(1.02);
+    transition: transform 0.3s ease, border-radius 0.5s ease;
+    box-shadow: 0 10px 20px rgb(251, 255, 220);}
+h2{text-align: center;
+    text-shadow: 2px 3px 10px rgb(249, 200, 114);
+    color:rgb(230, 240, 214);
+    background-color: rgb(32, 1, 122);
+    font-size: 30px;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 72px 20px 72px 20px;
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    font-family: mhm;}
+h2:hover {
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, border-radius 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgb(11, 11, 80);}
+h3{
+    text-align: center;
+    color:rgb(40, 40, 118);
+    font-family: yea;
+    text-decoration: underline;
+    font-size: 15px;}
+.spin {
+animation:spin 3s infinite linear;
+    filter: drop-shadow(1px 0px 0px rgb(41, 58, 111)) 
+          drop-shadow(-1px 0px 0px rgb(41, 58, 111)) 
+          drop-shadow(0px 1px 0px rgb(41, 58, 111)) 
+          drop-shadow(0px -1px 0px rgb(41, 58, 111));
+    transition:drop-shadow 0.2s ease;}
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}}
+.spin:hover{
+    transition: drop-shadow 0.2s ease;
+    filter:drop-shadow(2px 0px 0px #fff)
+        drop-shadow(-2px 0px 0px #fff)
+        drop-shadow(0px 2px 0px #fff)
+        drop-shadow(0px -2px 0px #fff)
+        drop-shadow(2px 2px 0px #fff)
+        drop-shadow(-2px 2px 0px #fff)
+        drop-shadow(2px -2px 0px #fff)
+        drop-shadow(-2px -2px 0px #fff);
+}
+div.jenis{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    height: 400px;
+    gap:20px}
+div.jenis p{
+    text-indent: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;}
+div.jenis2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap:20px}
+div.jenis2 p{
+    text-indent: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;}
+
+div.kapalselam{
+    border: 2px solid rgb(18, 18, 63);
+    padding: 16px;
+    width: 350px ;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #F1E6CF, rgb(89, 144, 168), rgb(41, 58, 111));
+    gap:60px;
+    border-radius: 15px 15px 15px 15px;
+    color: aliceblue;
+    height:400px;
+    text-align: justify;
+    text-justify: inter-word;}
+div.telurkecil{
+    border: 2px solid rgb(18, 18, 63);
+    padding: 16px;
+    width: 350px ;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #F1E6CF, rgb(89, 144, 168), rgb(41, 58, 111));
+    gap:60px;
+    border-radius: 15px 15px 15px 15px;
+    color: aliceblue;
+    height:400px;}
+div.lenjer{
+    border: 2px solid rgb(18, 18, 63);
+    padding: 16px;
+    width: 350px ;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #F1E6CF, rgb(89, 144, 168), rgb(41, 58, 111));
+    gap:60px;
+    border-radius: 15px 15px 15px 15px;
+    color: aliceblue;
+    height:400px}
+div.adaan{
+    border: 2px solid rgb(18, 18, 63);
+    padding: 16px;
+    width: 350px ;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #F1E6CF, rgb(89, 144, 168), rgb(41, 58, 111));
+    gap:60px;
+    border-radius: 15px 15px 15px 15px;
+    color: aliceblue;
+    height:400px}
+div.keriting{
+    border: 2px solid rgb(18, 18, 63);
+    padding: 16px;
+    width: 350px ;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #F1E6CF, rgb(89, 144, 168), rgb(41, 58, 111));
+    gap:60px;
+    border-radius: 15px 15px 15px 15px;
+    color: aliceblue;
+    height:400px;}
+div.kulit{
+    border: 2px solid rgb(18, 18, 63);
+    padding: 16px;
+    width: 350px ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #F1E6CF, rgb(89, 144, 168), rgb(41, 58, 111));
+    gap:60px;
+    border-radius: 15px 15px 15px 15px;
+    color: aliceblue;
+    height:400px}
+div.kapalselam img{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(33, 36, 48);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease}
+div.lenjer img{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(33, 36, 48);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease}
+div.telurkecil img{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(33, 36, 48);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease}
+div.adaan img{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(33, 36, 48);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease}  
+div.keriting img{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(33, 36, 48);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease}  
+div.kulit img{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(33, 36, 48);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease}
+div.kapalselam img:hover {
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.02);
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgb(251, 255, 220)}
+div.telurkecil img:hover {
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.02);
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgb(251, 255, 220)}
+div.lenjer img:hover {
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.02);
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgb(251, 255, 220)}
+div.adaan img:hover {
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.02);
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgb(251, 255, 220)}
+div.keriting img:hover {
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.02);
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgb(251, 255, 220)}
+div.kulit img:hover {
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.02);
+    transition: transform 0.2s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgb(251, 255, 220)}
+div.content2{
+    margin: 20px auto;
+    width: 80%;
+    background:linear-gradient(to bottom, #F1E6CF, rgb(140, 193, 216));
+    color: rgb(41, 58, 111);
+    padding: 30px;
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 50px;
+    border: 3px rgb(89, 144, 168) dashed;
+    gap:20px;
+    text-align: justify;
+    text-justify: inter-word}
+div.content2 img{
+    filter: drop-shadow(1px 0px 0px rgb(41, 58, 111)) 
+          drop-shadow(-1px 0px 0px rgb(41, 58, 111)) 
+          drop-shadow(0px 1px 0px rgb(41, 58, 111)) 
+          drop-shadow(0px -1px 0px rgb(41, 58, 111));
+    transition: transform 0.2s ease, drop-shadow 0.2s ease, rotate 0.15s ease-in-out}
+div.content2 img:hover{
+    transition: transform 0.2s ease, drop-shadow 0.2s ease, rotate 0.15s ease-in-out;
+    transform: scale(1.05);
+    rotate: -5deg;
+    filter:drop-shadow(2px 0px 0px #fff)
+        drop-shadow(-2px 0px 0px #fff)
+        drop-shadow(0px 2px 0px #fff)
+        drop-shadow(0px -2px 0px #fff)
+        drop-shadow(2px 2px 0px #fff)
+        drop-shadow(-2px 2px 0px #fff)
+        drop-shadow(2px -2px 0px #fff)
+        drop-shadow(-2px -2px 0px #fff);}
+div.content3{
+    margin: 20px auto;
+    width: 80%;
+    background:linear-gradient(to bottom, #F1E6CF, rgb(140, 193, 216));
+    color: rgb(41, 58, 111);
+    padding: 30px;
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 50px;
+    border: 3px rgb(89, 144, 168) dashed;
+    gap:20px;
+    text-align: justify;
+    text-justify: inter-word}
+div.content3 img{
+    filter: drop-shadow(1px 0px 0px rgb(41, 58, 111)) 
+          drop-shadow(-1px 0px 0px rgb(41, 58, 111)) 
+          drop-shadow(0px 1px 0px rgb(41, 58, 111)) 
+          drop-shadow(0px -1px 0px rgb(41, 58, 111));
+    transition: transform 0.2s ease, drop-shadow 0.2s ease, rotate 0.15s ease-in-out}
+div.content3 img:hover{
+    transition: transform 0.2s ease, drop-shadow 0.2s ease, rotate 0.15s ease-in-out;
+    transform: scale(1.05);
+    rotate: 5deg;
+    filter:drop-shadow(2px 0px 0px #fff)
+        drop-shadow(-2px 0px 0px #fff)
+        drop-shadow(0px 2px 0px #fff)
+        drop-shadow(0px -2px 0px #fff)
+        drop-shadow(2px 2px 0px #fff)
+        drop-shadow(-2px 2px 0px #fff)
+        drop-shadow(2px -2px 0px #fff)
+        drop-shadow(-2px -2px 0px #fff);}
+div.content4{
+    margin: 20px auto;
+    width: 80%;
+    background:linear-gradient(to bottom, #131752, rgb(0, 143, 204));
+    color: rgb(242, 243, 245);
+    padding: 30px;
+    border-radius: 12px 12px 12px 12px;
+    justify-content: center;
+    align-items: center;
+    border: 3px rgb(89, 144, 168) solid;
+    gap:20px;}
+div.THX{
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    gap:40px;
+    align-items: center
+}
+div.THX p{
+    font-family: ABCD;
+    color:#1a133c;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #F1E6CF;
+}
+
+@font-face{
+    font-family: "ABCD";
+    src: url("Tropi\ Land\ -\ \(Demo\)\ hanscostudio.com.ttf");}
+@font-face{
+    font-family: "yea";
+    src: url("categories\ elegant\ demo.ttf");}
+@font-face{
+    font-family: "mhm";
+    src: url("Himalia\ Callisto.ttf")}

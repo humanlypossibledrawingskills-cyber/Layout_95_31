@@ -1,0 +1,45 @@
+body{background-image: url(Untitled\ design.png);background-attachment: fixed; background-size: 1280px 720px; background-repeat: no-repeat;}
+.Buah ol{list-style-type:upper-roman; 
+    list-style-position: inside; 
+    background:linear-gradient(to bottom, #ffc404,rgb(255, 229, 144)); 
+    padding:10px;
+    border-radius: 12px 12px 12px 12px;}
+.Buah li{background-color: rgb(255, 252, 235);
+    margin: 5px;
+    padding:10px;
+    border-radius: 12px 12px 12px 12px;}
+
+.LoremIpsum{list-style-type:upper-roman; 
+    list-style-position: inside; 
+    background:linear-gradient(to bottom, #ffc404,rgb(255, 229, 144));
+    padding:10px;
+    border-radius: 12px 12px 12px 12px;}
+.LoremIpsum li{background-color: hsl(56, 100%, 97%);
+    margin: 5px;
+    padding:10px;
+    border-radius: 12px 12px 12px 12px;}
+.Buah li.stroberi{
+    background-color: rgb(27, 19, 35);
+color: azure;}
+.verity{list-style-type:upper-roman; 
+    list-style-position: inside; 
+    background:linear-gradient(to bottom, #ffc404,rgb(255, 229, 144));
+    padding:10px;
+    border-radius: 12px 12px 12px 12px;}
+.verity li{background-color: hsl(56, 100%, 97%);
+    margin: 5px;
+    padding:10px;
+    border-radius: 12px 12px 12px 12px;}
+.nrmgng{
+    background-color: hsl(56, 100%, 97%);
+    margin: 5px;
+    padding:10px;
+    border-radius: 12px 12px 12px 12px;
+}
+h2{animation: ease;
+color: rgb(28, 21, 2)}
+h2:hover{
+    transition: 0.3s color ease, 0.5s transform ease;
+    color: aliceblue;
+    transform: scale(1.01);
+}
