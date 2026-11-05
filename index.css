@@ -49,3 +49,6 @@ tr{
 tr:nth-child(even){
     background-color: rgb(255, 193, 151);
 }
+tr:hover{
+    background-color: azure;
+}
